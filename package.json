@@ -4,7 +4,12 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "install-dev": "npm install & typings install"
+    "install-dev": "npm install & typings install",
+    "build": "gulp",
+    "serve": "node dist/",
+    
+    "bserve": "npm run build & npm run serve",
+    "ibs": "npm run install-dev & npm run build & npm run serve"
   },
   "keywords": [],
   "author": "",
